@@ -1,0 +1,5 @@
+class BulkReadWriteTest extends Thread
+Multiple instance of this thread can be instantiated to test and see how transactions work in parallel.
+To track the writebacks to the disk writeback thread is now euqipped with functions similar to callback tracker to wait till a writeback is completed. 
+Although the model of a log ensures that this need not be done, this is done for purely testing purposes. 
+
